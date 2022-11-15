@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,vue}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,vue}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -55,5 +59,6 @@ module.exports = {
         "Noto Color Emoji"
       ]
     }
-  }
+  },
+  plugins: [require("flowbite/plugin")]
 };

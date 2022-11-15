@@ -1,8 +1,8 @@
 <script setup>
+import DataTable from "../components/DataTable.vue";
 import { onMounted } from "vue";
 import { useUserStore } from "../stores/user.store";
 import NavBar from "../components/Navbar.vue";
-import ProfileCard from "../components/ProfileCard.vue";
 
 const userStore = useUserStore();
 
@@ -12,6 +12,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <NavBar />
-  <ProfileCard :username="userStore.username" />
+  <NavBar :username="userStore.username" />
+  <DataTable />
 </template>
