@@ -8,7 +8,7 @@ import axios from "axios";
 
 import "./assets/main.css";
 
-axios.defaults.baseURL = "http://192.168.1.75:3000"
+axios.defaults.baseURL = "http://192.168.1.75:3000";
 
 const pinia = createPinia();
 const app = createApp(App);

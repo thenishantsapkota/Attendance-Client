@@ -1,5 +1,5 @@
 <script setup>
-import DataTable from "../components/DataTable.vue";
+import DataTable from "../components/class/ClassTable.vue";
 import { onMounted } from "vue";
 import { useUserStore } from "../stores/user.store";
 import NavBar from "../components/Navbar.vue";

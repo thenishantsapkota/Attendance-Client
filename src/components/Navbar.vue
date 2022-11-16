@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted,reactive } from "vue";
+import { onMounted, reactive } from "vue";
 import { useUserStore } from "../stores/user.store";
 import DarkMode from "./DarkMode.vue";
 const userStore = useUserStore();
@@ -7,15 +7,15 @@ const userStore = useUserStore();
 const state = reactive({
   targetEl: null,
   collapse: null
-})
+});
 
-onMounted(() =>{
-  state.targetEl = document.getElementById("navbar-cta")
-  state.collapse = new Collapse(state.targetEl)
-})
+onMounted(() => {
+  state.targetEl = document.getElementById("navbar-cta");
+  state.collapse = new Collapse(state.targetEl);
+});
 
-function toggle(){
-  state.collapse.toggle()
+function toggle() {
+  state.collapse.toggle();
 }
 </script>
 
@@ -48,7 +48,6 @@ function toggle(){
           aria-controls="navbar-cta"
           aria-expanded="false"
           @click="toggle"
-
         >
           <span class="sr-only">Open main menu</span>
           <svg
